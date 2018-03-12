@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_page"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/home_login"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/home_button"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/home_login"
+        android:textColor="@color/red"
+        android:textSize="@dimen/button_size"
+        android:textStyle="normal"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+
+        android:id="@+id/home_register"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/home_button"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/home_register"
+        android:textColor="@color/red"
+        android:textSize="@dimen/button_size"
+        android:textStyle="normal"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/home_login"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

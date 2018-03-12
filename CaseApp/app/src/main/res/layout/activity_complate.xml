@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_complate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+
+    <LinearLayout style="@style/TitleBar">
+
+        <include layout="@layout/same_titlebar" />
+
+
+        <LinearLayout style="@style/Linear_titles">
+
+            <RelativeLayout
+                style="@style/RelativeLayout_img"
+                android:onClick="onHomeClick">
+
+                <ImageView
+                    style="@style/linear_img"
+                    android:src="@mipmap/header_back" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+
+                    android:id="@+id/textView2"
+                    style="@style/TtileSetting"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/PassReSet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize" />
+
+                <TextView
+                    android:id="@+id/sby_resetpage_onnext_completes"
+                    style="@style/TtileSetting"
+                    android:layout_alignBaseline="@+id/textView2"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="Register"
+                    android:text="@string/complete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/back_16"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/regiseter_pass" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/sby_resetpage_onnext_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_16"
+                    android:hint="@string/putnewpassword"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/regiseter_pass" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/sby_resetpage_onnext_passwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_16"
+                    android:hint="@string/putnewpasswords"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sby_resetpage_onnext_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/sby_resetpage_onnext_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/land"
+                    android:text="@string/complete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

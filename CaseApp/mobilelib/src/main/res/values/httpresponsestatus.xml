@@ -1,0 +1,331 @@
+<resources>
+
+    <string name="hrs_c_0">0</string>
+    <string name="hrs_de_0"></string>
+    <string name="hrs_dc_0">本地响应成功。</string>
+    　
+    <string name="hrs_c_100">100</string>
+    <string name="hrs_de_100">Continue</string>
+    <string name="hrs_dc_100">初始的请求已经接受，客户应当继续发送请求的其余部分。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_101">101</string>
+    <string name="hrs_de_101">Switching Protocols</string>
+    <string name="hrs_dc_101">服务器将遵从客户的请求转换到另外一种协议（HTTP 1.1新）</string>
+
+    　
+    <string name="hrs_c_200">200</string>
+    <string name="hrs_de_200">OK</string>
+    <string name="hrs_dc_200">一切正常，对GET和POST请求的应答文档跟在后面。</string>
+    　
+    <string name="hrs_c_201">201</string>
+    <string name="hrs_de_201">Created</string>
+    <string name="hrs_dc_201">服务器已经创建了文档，Location头给出了它的URL。</string>
+    　
+    <string name="hrs_c_202">202</string>
+    <string name="hrs_de_202">Accepted</string>
+    <string name="hrs_dc_202">已经接受请求，但处理尚未完成。</string>
+    　
+    <string name="hrs_c_203">203</string>
+    <string name="hrs_de_203">Non-Authoritative Information</string>
+    <string name="hrs_dc_203">文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝，非权威性信息（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_204">204</string>
+    <string name="hrs_de_204">No Content</string>
+    <string name="hrs_dc_204">没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。</string>
+    　
+    <string name="hrs_c_205">205</string>
+    <string name="hrs_de_205">Reset Content</string>
+    <string name="hrs_dc_205">没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_206">206</string>
+    <string name="hrs_de_206">Partial Content</string>
+    <string name="hrs_dc_206">客户发送了一个带有Range头的GET请求，服务器完成了它（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_300">300</string>
+    <string name="hrs_de_300">Multiple Choices</string>
+    <string name="hrs_dc_300">客户请求的文档可以在多个位置找到，这些位置已经在返回的文档内列出。如果服务器要提出优先选择，则应该在Location应答头指明。</string>
+    　
+    <string name="hrs_c_301">301</string>
+    <string name="hrs_de_301">Moved Permanently</string>
+    <string name="hrs_dc_301">客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL。</string>
+    　
+    <string name="hrs_c_302">302</string>
+    <string name="hrs_de_302">Found</string>
+    <string name="hrs_dc_302">类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。注意，在HTTP1.0中对应的状态信息是“Moved
+    Temporatily”。出现该状态代码时，浏览器能够自动访问新的URL，因此它是一个很有用的状态代码。注意这个状态代码有时候可以和301替换使 用。例如，如果浏览器错误地请求
+    http://host/~user （缺少了后面的斜杠），有的服务器返回301，有的则返回302。严格地说，我们只能假定只有当原来的请求是GET时浏览器才会自动重定向。请参见 307。</string>
+    　
+    <string name="hrs_c_303">303</string>
+    <string name="hrs_de_303">See Other</string>
+    <string name="hrs_dc_303">类似于301/302，不同之处在于，如果原来的请求是POST，Location头指定的重定向目标文档应该通过GET提取（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_304">304</string>
+    <string name="hrs_de_304">Not Modified</string>
+    <string name="hrs_dc_304">客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文档还可以继续使用。</string>
+    　
+    <string name="hrs_c_305">305</string>
+    <string name="hrs_de_305">Use Proxy</string>
+    <string name="hrs_dc_305">客户请求的文档应该通过Location头所指明的代理服务器提取（HTTP 1.1新）。</string>
+
+    <string name="hrs_c_307">307</string>
+    <string name="hrs_de_307">Temporary Redirect</string>
+    <string name="hrs_dc_307">和302（Found）相同。许多浏览器会错误地响应302应答进行重 定向，即使原来的请求是POST，即使它实际上只能在POST请求的应答是303时才能重定向。由于这个原因，HTTP 1.1新增了307，以便更加清除地区分几个状态代码：当出现303应答时，浏览器可以跟随重定向的GET和POST请求；如果是307应答，则浏览器只 能跟随对GET请求的重定向。（HTTP 1.1新）</string>
+
+    　
+    <string name="hrs_c_400">400</string>
+    <string name="hrs_de_400">Bad Request</string>
+    <string name="hrs_dc_400">请求出现语法错误。</string>
+    　
+    <string name="hrs_c_401">401</string>
+    <string name="hrs_de_401">Unauthorized</string>
+    <string name="hrs_dc_401">访问被拒绝，客户试图未经授权访问受密码保护的
+    页面。应答中会包含一个WWW-Authenticate头，浏览器据此显示用户名字/密码对话框，然后在填写合适的Authorization头后再次 发出请求。IIS 定义了许多不同的 401
+    错误，它们指明更为具体的错误原因。这些具体的错误代码在浏览器中显示，但不在 IIS 日志中显示：</string>
+    　
+    <string name="hrs_c_401.1">401.1</string>
+    <string name="hrs_de_401.1"></string>
+    <string name="hrs_dc_401.1">登录失败。</string>
+    　
+    <string name="hrs_c_401.2">401.2</string>
+    <string name="hrs_de_401.2"></string>
+    <string name="hrs_dc_401.2">服务器配置导致登录失败。</string>
+    　
+    <string name="hrs_c_401.3">401.3</string>
+    <string name="hrs_de_401.3"></string>
+    <string name="hrs_dc_401.3">由于 ACL 对资源的限制而未获得授权。</string>
+    　
+    <string name="hrs_c_401.4">401.4</string>
+    <string name="hrs_de_401.4"></string>
+    <string name="hrs_dc_401.4">筛选器授权失败。</string>
+    　
+    <string name="hrs_c_401.5">401.5</string>
+    <string name="hrs_de_401.5"></string>
+    <string name="hrs_dc_401.5">ISAPI/CGI 应用程序授权失败。</string>
+    　
+    <string name="hrs_c_401.7">401.7</string>
+    <string name="hrs_de_401.7"></string>
+    <string name="hrs_dc_401.7">访问被 Web 服务器上的 URL 授权策略拒绝。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_403">403</string>
+    <string name="hrs_de_403">Forbidden</string>
+    <string name="hrs_dc_403">资源不可用。服务器理解客户的请求，但拒绝处理它。通常由于服务器上文件或目录的权限设置导致。禁止访问：IIS 定义了许多不同的 403 错误，它们指明更为具体的错误原因：</string>
+    　
+    <string name="hrs_c_403.1">403.1</string>
+    <string name="hrs_de_403.1"></string>
+    <string name="hrs_dc_403.1">执行访问被禁止。</string>
+    　
+    <string name="hrs_c_403.2">403.2</string>
+    <string name="hrs_de_403.2"></string>
+    <string name="hrs_dc_403.2">读访问被禁止。</string>
+    　
+    <string name="hrs_c_403.3">403.3</string>
+    <string name="hrs_de_403.3"></string>
+    <string name="hrs_dc_403.3">写访问被禁止。</string>
+    　
+    <string name="hrs_c_403.4">403.4</string>
+    <string name="hrs_de_403.4"></string>
+    <string name="hrs_dc_403.4">要求 SSL。</string>
+    　
+    <string name="hrs_c_403.5">403.5</string>
+    <string name="hrs_de_403.5"></string>
+    <string name="hrs_dc_403.5">要求 SSL 128。</string>
+    　
+    <string name="hrs_c_403.6">403.6</string>
+    <string name="hrs_de_403.6"></string>
+    <string name="hrs_dc_403.6">IP 地址被拒绝。</string>
+    　
+    <string name="hrs_c_403.7">403.7</string>
+    <string name="hrs_de_403.7"></string>
+    <string name="hrs_dc_403.7">要求客户端证书。</string>
+    　
+    <string name="hrs_c_403.8">403.8</string>
+    <string name="hrs_de_403.8"></string>
+    <string name="hrs_dc_403.8">站点访问被拒绝。</string>
+    　
+    <string name="hrs_c_403.9">403.9</string>
+    <string name="hrs_de_403.9"></string>
+    <string name="hrs_dc_403.9">用户数过多。</string>
+    　
+    <string name="hrs_c_403.10">403.10</string>
+    <string name="hrs_de_403.10"></string>
+    <string name="hrs_dc_403.10">配置无效。</string>
+    　
+    <string name="hrs_c_403.11">403.11</string>
+    <string name="hrs_de_403.11"></string>
+    <string name="hrs_dc_403.11">密码更改。</string>
+    　
+    <string name="hrs_c_403.12">403.12</string>
+    <string name="hrs_de_403.12"></string>
+    <string name="hrs_dc_403.12">拒绝访问映射表。</string>
+    　
+    <string name="hrs_c_403.13">403.13</string>
+    <string name="hrs_de_403.13"></string>
+    <string name="hrs_dc_403.13">客户端证书被吊销。</string>
+    　
+    <string name="hrs_c_403.14">403.14</string>
+    <string name="hrs_de_403.14"></string>
+    <string name="hrs_dc_403.14">拒绝目录列表。</string>
+    　
+    <string name="hrs_c_403.15">403.15</string>
+    <string name="hrs_de_403.15"></string>
+    <string name="hrs_dc_403.15">超出客户端访问许可。</string>
+    　
+    <string name="hrs_c_403.16">403.16</string>
+    <string name="hrs_de_403.16"></string>
+    <string name="hrs_dc_403.16">客户端证书不受信任或无效。</string>
+    　
+    <string name="hrs_c_403.17">403.17</string>
+    <string name="hrs_de_403.17"></string>
+    <string name="hrs_dc_403.17">客户端证书已过期或尚未生效。</string>
+    　
+    <string name="hrs_c_403.18">403.18</string>
+    <string name="hrs_de_403.18"></string>
+    <string name="hrs_dc_403.18">在当前的应用程序池中不能执行所请求的 URL。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_403.19">403.19</string>
+    <string name="hrs_de_403.19"></string>
+    <string name="hrs_dc_403.19">不能为这个应用程序池中的客户端执行 CGI。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_403.20">403.20</string>
+    <string name="hrs_de_403.20"></string>
+    <string name="hrs_dc_403.20">Passport 登录失败。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_404">404</string>
+    <string name="hrs_de_404">Not Found</string>
+    <string name="hrs_dc_404">无法找到指定位置的资源。这也是一个常用的应答。</string>
+    　
+    <string name="hrs_c_404.0">404.0</string>
+    <string name="hrs_de_404.0"></string>
+    <string name="hrs_dc_404.0">没有找到文件或目录。</string>
+    　
+    <string name="hrs_c_404.1">404.1</string>
+    <string name="hrs_de_404.1"></string>
+    <string name="hrs_dc_404.1">无法在所请求的端口上访问 Web 站点。</string>
+    　
+    <string name="hrs_c_404.2">404.2</string>
+    <string name="hrs_de_404.2"></string>
+    <string name="hrs_dc_404.2">Web 服务扩展锁定策略阻止本请求。</string>
+    　
+    <string name="hrs_c_404.3">404.3</string>
+    <string name="hrs_de_404.3"></string>
+    <string name="hrs_dc_404.3">MIME 映射策略阻止本请求。</string>
+
+    　
+    <string name="hrs_c_405">405</string>
+    <string name="hrs_de_405">Method Not Allowed</string>
+    <string name="hrs_dc_405">请求方法（GET、POST、HEAD、DELETE、PUT、TRACE等）对指定的资源不适用，用来访问本页面的 HTTP 谓词不被允许（方法不被允许）（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_406">406</string>
+    <string name="hrs_de_406">Not Acceptable</string>
+    <string name="hrs_dc_406">指定的资源已经找到，但它的MIME类型和客户在Accpet头中所指定的不兼容，客户端浏览器不接受所请求页面的
+    MIME 类型（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_407">407</string>
+    <string name="hrs_de_407">Proxy Authentication Required</string>
+    <string name="hrs_dc_407">要求进行代理身份验证，类似于401，表示客户必须先经过代理服务器的授权。（HTTP
+    1.1新）</string>
+    　
+    <string name="hrs_c_408">408</string>
+    <string name="hrs_de_408">Request Timeout</string>
+    <string name="hrs_dc_408">在服务器许可的等待时间内，客户一直没有发出任何请求。客户可以在以后重复同一请求。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_409">409</string>
+    <string name="hrs_de_409">Conflict</string>
+    <string name="hrs_dc_409">通常和PUT请求有关。由于请求和资源的当前状态相冲突，因此请求不能成功。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_410">410</string>
+    <string name="hrs_de_410">Gone</string>
+    <string name="hrs_dc_410">所请求的文档已经不再可用，而且服务器不知道应该重定向到哪一个地址。它和404的不同在于，返回407表示文档永久地离开了指定的位置，而404表示由于未知的原因文档不可用。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_411">411</string>
+    <string name="hrs_de_411">Length Required</string>
+    <string name="hrs_dc_411">服务器不能处理请求，除非客户发送一个Content-Length头。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_412">412</string>
+    <string name="hrs_de_412">Precondition Failed</string>
+    <string name="hrs_dc_412">请求头中指定的一些前提条件失败（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_413">413</string>
+    <string name="hrs_de_413">Request Entity Too Large</string>
+    <string name="hrs_dc_413">目标文档的大小超过服务器当前愿意处理的大小。如果服务器认为自己能够稍后再处理该请求，则应该提供一个Retry-After头（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_414">414</string>
+    <string name="hrs_de_414">Request URI Too Long</string>
+    <string name="hrs_dc_414">URI太长（HTTP 1.1新）。</string>
+    　
+    <string name="hrs_c_415">415</string>
+    <string name="hrs_de_415"></string>
+    <string name="hrs_dc_415">不支持的媒体类型。</string>
+    　
+    <string name="hrs_c_416">416</string>
+    <string name="hrs_de_416">Requested Range Not Satisfiable</string>
+    <string name="hrs_dc_416">服务器不能满足客户在请求中指定的Range头。（HTTP 1.1新）</string>
+    　
+    <string name="hrs_c_417">417</string>
+    <string name="hrs_de_417"></string>
+    <string name="hrs_dc_417"> 执行失败。</string>
+    　
+    <string name="hrs_c_423">423</string>
+    <string name="hrs_de_423"></string>
+    <string name="hrs_dc_423">锁定的错误。</string>
+
+    　
+    <string name="hrs_c_500">500</string>
+    <string name="hrs_de_500">Internal Server Error</string>
+    <string name="hrs_dc_500">服务器遇到了意料不到的情况，不能完成客户的请求。</string>
+    <string name="hrs_hint_500">服务器内部错误，不能完成您的请求。</string>
+    　
+    <string name="hrs_c_500.12">500.12</string>
+    <string name="hrs_de_500.12"></string>
+    <string name="hrs_dc_500.12">应用程序正忙于在 Web 服务器上重新启动。</string>
+    　
+    <string name="hrs_c_500.13">500.13</string>
+    <string name="hrs_de_500.13"></string>
+    <string name="hrs_dc_500.13">Web 服务器太忙。</string>
+    　
+    <string name="hrs_c_500.15">500.15</string>
+    <string name="hrs_de_500.15"></string>
+    <string name="hrs_dc_500.15">不允许直接请求 Global.asa。</string>
+    　
+    <string name="hrs_c_500.16">500.16</string>
+    <string name="hrs_de_500.16"></string>
+    <string name="hrs_dc_500.16">UNC 授权凭据不正确。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_500.18">500.18</string>
+    <string name="hrs_de_500.18"></string>
+    <string name="hrs_dc_500.18">URL 授权存储不能打开。这个错误代码为 IIS 6.0 所专用。</string>
+    　
+    <string name="hrs_c_500.100">500.100</string>
+    <string name="hrs_de_500.100"></string>
+    <string name="hrs_dc_500.100">内部 ASP 错误。</string>
+    　
+    <string name="hrs_c_501">501</string>
+    <string name="hrs_de_501">Not Implemented</string>
+    <string name="hrs_dc_501">服务器不支持实现请求所需要的功能，页眉值指定了未实现的配置。例如，客户发出了一个服务器不支持的PUT请求。</string>
+    　
+    <string name="hrs_c_502">502</string>
+    <string name="hrs_de_502">Bad Gateway</string>
+    <string name="hrs_dc_502">服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答。 亦说Web
+    服务器用作网关或代理服务器时收到了无效响应。</string>
+    　
+    <string name="hrs_c_502.1">502.1</string>
+    <string name="hrs_de_502.1"></string>
+    <string name="hrs_dc_502.1">CGI 应用程序超时。</string>
+    　
+    <string name="hrs_c_502.2">502.2</string>
+    <string name="hrs_de_502.2"></string>
+    <string name="hrs_dc_502.2">CGI 应用程序出错。</string>
+    　
+    <string name="hrs_c_503">503</string>
+    <string name="hrs_de_503">Service Unavailable</string>
+    <string name="hrs_dc_503">服务不可用，服务器由于维护或者负载过重未能应答。例如，Servlet可能在数据库连接池已满的情况下返回503。服务器返回503时可以提供一个Retry-After头。这个错误代码为 IIS
+    6.0 所专用。</string>
+    　
+    <string name="hrs_c_504">504</string>
+    <string name="hrs_de_504">Gateway Timeout</string>
+    <string name="hrs_dc_504">网关超时，由作为代理或网关的服务器使用，表示不能及时地从远程服务器获得应答。（HTTP 1.1新） 。</string>
+    <string name="hrs_c_505">505</string>
+    <string name="hrs_de_505">HTTP Version Not Supported</string>
+    <string name="hrs_dc_505">服务器不支持请求中所指明的HTTP版本。</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.lawyee.mobilelib"
+    android:versionCode="1"
+    android:versionName="1.0.160416" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <service
+            android:name=".filedownloader.DownLoadService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+    </application>
+</manifest>

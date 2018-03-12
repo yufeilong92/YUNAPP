@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">SuBaoYun</string>
+    <string name="home_login">登陆</string>
+    <string name="home_register">注册</string>
+    <string name="register_title">诉保云平台</string>
+    <string name="PassReSet">密码重置</string>
+    <string name="complete">完成</string>
+    <string name="protocol">平台协议</string>
+    <string name="onnext">下一步</string>
+    <string name="username">用户名:</string>
+    <string name="newpassword">新密码</string>
+    <string name="Confirm_passwords">确认密码:</string>
+    <string name="putnewpassword">请输入新密码</string>
+    <string name="putnewpasswords">请确认新密码</string>
+    <string name="register_name">注册</string>
+    <string name="regiset_title_size">18</string>
+    <string name="register_Agreement">注册已阅读和同意诉讼财产保全责任保险云服务平台</string>
+    <string name="register_agreements">平台服务协议</string>
+    <string name="login"><u>立即登陆</u></string>
+    <string name="register_page_name">请输入真实姓名</string>
+    <string name="register_page_ID">请输入身份证号</string>
+    <string name="register_page_pass">请输入密码</string>
+    <string name="register_page_pass1">请确认密码</string>
+    <string name="register_page_phone">请输入手机号</string>
+    <string name="register_page_sendcode">发送验证码</string>
+    <string name="code">验证码:</string>
+    <string name="register_page_agreements">请输入验证码</string>
+    <string name="register_page_register"><u>立即注册</u></string>
+    <string name="main_page_Myinsurancepolicy">我的投保</string>
+    <string name="main_page_want_insure">我要投保</string>
+    <string name="login_page_Forget_password">忘记密码？</string>
+    <string name="loginr_page_NOid">没有账号？</string>
+    <string name="register_page_HaveID">已有账号 !</string>
+    <string name="main_page_regisetation">登记号</string>
+    <string name="main_page_insurer">被保险人</string>
+    <string name="main_page_date">登记日期</string>
+    <string name="insure_page_insuretype">选择被保险人类型</string>
+    <string name="personal">个人</string>
+    <string name="company">单位</string>
+    <string name="next">下一步</string>
+    <string name="submit">提交</string>
+    <string name="about_insure">如何投保？</string>
+    <string name="about_insure_content">初次使用请进行注册，登陆后点击我要投保，选择要投保人类型并根据提示指引进行操作。</string>
+    <string name="about_upload">如何上传资料</string>
+    <string name="about_upload_data">点击资料上传可选择手机相册中的资料图片或进行拍照上传</string>
+    <string name="type_select">类型选择</string>
+    <string name="Help_explain">帮助说明</string>
+    <string name="About_us">关于我们</string>
+    <string name="service_photo">服务热线</string>
+    <string name="service__photo">010-62758866</string>
+    <string name="Official_website">官方网站</string>
+    <string name="official_web">www.subao120.com</string>
+    <string name="press_again_backrun">再按一次返回桌面</string>
+   
+    <string name="personalMark">0f49d7397a144dbcad702c2ef409d083</string>
+    <string name="UnitMark">23acfd9e389e4e5d9adb5ae6a9ff0723</string>
+
+    <string name="permission_deny_again_title">权限设置</string>
+    <string name="permission_deny_again_positive">设置</string>
+    <string name="permission_deny_again_nagative">取消</string>
+
+    <string name="permission_rc_storage">需要打开相机权限</string>
+
+    <string name="permission_storage_deny_again">打开应用程序设置修改应用程序的相机权限</string>
+
+
+</resources>
+

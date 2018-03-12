@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:id="@+id/main"
+        style="@style/TitleBar">
+
+        <include layout="@layout/same_titlebar"></include>
+
+        <LinearLayout style="@style/Linear_titles">
+
+            <!--<RelativeLayout-->
+                <!--style="@style/RelativeLayout_img"-->
+                <!--android:onClick="onHomeClick">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView"-->
+                    <!--style="@style/linear_img"-->
+                    <!--android:src="@mipmap/header_back" />-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/sby_main_setting"
+                    android:layout_width="@dimen/back_48"
+                    android:padding="@dimen/back_12"
+                    android:layout_height="@dimen/back_48"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/set" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.97"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDEEDE"
+            android:padding="10dp"
+            android:text="当前网络不可用!"
+            android:visibility="gone" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sby_main_swiperefresh"
+            android:layout_marginLeft="@dimen/back_16"
+            android:layout_marginRight="@dimen/back_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/sby_mian_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/back_16"
+                android:layout_marginLeft="@dimen/back_16"
+                android:layout_marginRight="@dimen/back_16"
+                android:layout_marginStart="@dimen/back_16"
+                android:cacheColorHint="#00000000"
+                android:divider="#f4f4f4"
+                android:dividerHeight="@dimen/back_16"
+                android:listSelector="#f4f4f4">
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sby_mian_myinsurances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/denglu" />
+
+                <TextView
+                    android:id="@+id/sby_mian_myinsurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/red"
+                    android:text="@string/main_page_Myinsurancepolicy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sby_mian_wantinsuers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/gesture" />
+
+                <TextView
+                    android:id="@+id/sby_mian_wantinsuer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/red"
+                    android:text="@string/main_page_want_insure"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

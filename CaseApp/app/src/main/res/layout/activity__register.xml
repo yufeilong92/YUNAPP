@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity__register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout style="@style/TitleBar">
+
+        <include layout="@layout/same_titlebar" />
+
+
+        <LinearLayout style="@style/Linear_titles">
+
+            <RelativeLayout
+                style="@style/RelativeLayout_img"
+                android:onClick="onHomeClick">
+
+                <ImageView
+                    style="@style/linear_img"
+                    android:src="@mipmap/header_back" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+
+                    style="@style/TtileSetting"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/register_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize" />
+
+                <TextView
+                    android:id="@+id/sby_register_register"
+                    style="@style/TtileSetting"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="Register"
+                    android:text="@string/home_register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/back_16"
+        android:layout_marginRight="@dimen/back_16"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout style="@style/register_edit_setting">
+
+            <ImageView
+                style="@style/register_img"
+                android:src="@mipmap/register_user" />
+
+            <EditText
+                android:id="@+id/sby_register_user_name"
+                style="@style/register_protocol"
+                android:hint="@string/register_page_name"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+
+        <LinearLayout style="@style/register_edit_setting">
+
+            <ImageView
+                style="@style/register_img"
+                android:src="@mipmap/regiseter_card" />
+
+            <EditText
+                android:id="@+id/sby_register_user_IDcard"
+                style="@style/register_protocol"
+                android:hint="@string/register_page_ID"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:lines="2"
+                android:maxLength="18" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+
+        <LinearLayout style="@style/register_edit_setting">
+
+            <ImageView
+                style="@style/register_img"
+                android:src="@mipmap/regiseter_pass">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/sby_register_user_password"
+                style="@style/register_protocol"
+                android:hint="@string/register_page_pass"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxEms="12"
+                android:maxLength="12"
+                android:minEms="6"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+
+        <LinearLayout style="@style/register_edit_setting">
+
+            <ImageView
+                style="@style/register_img"
+                android:src="@mipmap/regiseter_pass" />
+
+            <EditText
+                android:id="@+id/sby_resgister_user_password2"
+                style="@style/register_protocol"
+                android:hint="@string/register_page_pass1"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="2"
+                android:maxEms="12"
+                android:maxLength="12"
+                android:minEms="6"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+
+        <RelativeLayout
+            style="@style/register_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:id="@+id/lines"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    style="@style/register_img"
+                    android:src="@mipmap/regiseter_phone" />
+
+                <EditText
+                    android:id="@+id/sby_resgister_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.36"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:hint="@string/register_page_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:phoneNumber="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginRight="16dp">
+
+                <Button
+                      android:padding="8dp"
+                    android:id="@+id/sby_register_send_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/code_button"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_page_sendcode"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+
+        <LinearLayout style="@style/register_edit_setting">
+
+            <ImageView
+                style="@style/register_img"
+                android:src="@mipmap/register_code" />
+
+            <EditText
+                android:id="@+id/sby_register_user_code"
+                style="@style/register_protocol"
+                android:hint="@string/register_page_agreements"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="2"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <ImageView
+            style="@style/register_img_back"
+            android:src="@mipmap/edit_back" />
+        <RelativeLayout
+            android:layout_marginTop="@dimen/back_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/back_8"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_page_HaveID" />
+                <TextView
+                    android:id="@+id/sby_register_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/back_8"
+                    android:text="@string/login"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

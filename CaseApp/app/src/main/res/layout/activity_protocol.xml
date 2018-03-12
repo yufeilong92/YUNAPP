@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_protocol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout style="@style/TitleBar">
+
+        <include layout="@layout/same_titlebar" />
+
+
+        <LinearLayout style="@style/Linear_titles">
+
+            <RelativeLayout
+                style="@style/RelativeLayout_img"
+                android:onClick="onHomeClick">
+
+                <ImageView
+                    style="@style/linear_img"
+                    android:src="@mipmap/header_back" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+
+                    style="@style/TtileSetting"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/protocol"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize"
+                    android:id="@+id/textView2" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+<WebView
+    android:id="@+id/MyWebView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</WebView>
+</LinearLayout>

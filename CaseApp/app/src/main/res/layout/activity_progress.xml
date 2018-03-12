@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_check_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <include layout="@layout/same_titlebar" />
+
+        <LinearLayout style="@style/Linear_titles">
+
+            <RelativeLayout
+                style="@style/RelativeLayout_img"
+                android:onClick="onHomeClick">
+
+                <ImageView
+                    style="@style/linear_img"
+                    android:src="@mipmap/header_back" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="查看详情"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="投保资料" />
+
+    </RelativeLayout>
+
+<!--
+    <HorizontalScrollView
+        android:id="@+id/hsv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+          android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/sby_progresspage_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:fadeScrollbars="true"
+                android:horizontalSpacing="4dip"
+                android:numColumns="4"
+                android:gravity="center"
+              android:stretchMode="columnWidth"
+                android:verticalSpacing="4dip"
+                android:padding="4dip"
+                />
+        </LinearLayout>
+    <!--</HorizontalScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="投保进度" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/sby_progeresspage_timeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
